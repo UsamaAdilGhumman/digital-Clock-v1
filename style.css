@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+}
+#PakClock{
+    font-size: 1rem;
+}
+#InterClock{
+    font-size: 1rem;
+}
+.container{
+    min-height: 110px;
+    min-width: 100px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: grey;
+    padding: 1.2rem;
+    color: whitesmoke;
+}
+.fa-play-circle{
+    color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.stop-watch{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: lightblue;
+}
+.number{
+}
+.stop-watch-number{
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+.stop{
+    display: none;
+}
