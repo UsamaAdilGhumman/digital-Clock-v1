@@ -1,37 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clock </title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Clock</title>
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
   <body>
-      <div class="container">
-        <div class="row text-white">
-          <div class="col">
-            <h3>Time in Pakistan Now</h3>
-            <p><span id="PakClock"></span></p>
+    <div class="container">
+      <div class="row text-white">
+        <div class="col">
+          <h3>Time in Pakistan Now</h3>
+          <p><span id="PakClock"></span></p>
+        </div>
+        <div class="col">
+          <h3>International Time Now</h3>
+          <p><span id="InterClock"></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="container stop-watch-div">
+      <div class="stop-watch">
+        <h3>Stop Watch</h3>
+      </div>
+      <div class="number">
+        <p class="stop-watch-number">0:0:0</p>
+      </div>
+      <div class="buttons">
+        <button class="btn start">Start</button>
+        <button class="btn stop">Stop</button>
+        <button class="btn reset">Reset</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h3>Timmer Watch</h3>
+      </div>
+      <div class="timerinput">
+        <div class="controller">
+          <div>
+            <input type="number" name="hour" id="hour" class="input hour" min="0" max="23"/>
           </div>
-          <div class="col">
-            <h3>International Time Now</h3>
-            <p><span id="InterClock"></span></p>
+          <div>
+            <label for="hour">Hour &nbsp; &nbsp;</label>
+          </div>
+        </div>
+        <div>
+          <div class="controller">
+            <div>
+              <input
+                type="number"
+                name="mintus"
+                id="mintus"
+                class="input mintus"
+                min="0"
+                max="59"
+              />
+            </div>
+            <div>
+              <label for="hour">Mintus</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="controller">
+            <div>
+              <input
+                type="number"
+                name="second"
+                id="second"
+                class="input second"
+                min="0"
+                max="59"
+              />
+            </div>
+            <div>
+              <label for="second">Second</label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container stop-watch-div">
-        <div class="stop-watch" >
-          <h3>Stop Watch</h3>
-        </div>
-        <div class="number">
-          <p class="stop-watch-number">0:0:0</p>
-        </div>
-        <div class="buttons">
-          <button class="btn start" >Start</button>
-          <button class="btn stop">Stop</button>
-          <button class="btn reset" >Reset</button>
-        </div>
+      <div class="timer">
+        <p class="timer-number">0h:0m:0s</p>
       </div>
+      <div class="controller">
+        <i class="fa fa-play-circle"></i>
+        <i class="fa fa-pause-circle-o"></i>
+      </div>
+    </div>
   </body>
 </html>

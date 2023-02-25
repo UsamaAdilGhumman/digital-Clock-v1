@@ -57,3 +57,32 @@ body{
 .stop{
     display: none;
 }
+.controller{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa{
+    font-size: 3rem;
+    color: whitesmoke;
+    margin: 1rem 2rem;
+}
+.title{
+    text-align: center;
+    margin: 1rem;
+}
+.input{
+    display: block;
+    min-width: 150px;
+    width: 100%;
+    padding: 0.4rem;
+}
+.fa-pause-circle-o{
+    display: none;
+}
+.timer{
+    display:none;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
